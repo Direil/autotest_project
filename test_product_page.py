@@ -1,5 +1,5 @@
 import pytest
-from random import randint
+import time
 from .pages.product_page import ProductPage
 from .pages.basket_page import BasketPage
 from .pages.login_page import LoginPage
@@ -13,7 +13,7 @@ class TestUserAddToBasketFromProductPage:
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, browser):
         login_link = "http://selenium1py.pythonanywhere.com/accounts/login/"
-        email = str(randint(10000, 100000)) + "@fakemail.org"
+        email = str(time.time()) + "@fakemail.org"
         password = "Password_"
         page = LoginPage(browser, login_link)
         page.open()
