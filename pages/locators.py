@@ -21,7 +21,6 @@ class ProductPageLocators:
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main > .price_color")
     ADD_TO_BASKET_PRODUCT_NAME = (By.CSS_SELECTOR, ".alert-success:nth-child(1) strong")
     ADD_TO_BASKET_PRODUCT_PRICE = (By.CSS_SELECTOR, ".alert-info strong")
-    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 
 class BasePageLocators:
